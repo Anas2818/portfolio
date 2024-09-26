@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+
+/* Ajout de padding pour éviter que le header ne cache le contenu */
+body {
+  padding-top: 80px; /* Ajuster la valeur selon la hauteur de votre header */
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour le header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img.rounded-image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text .name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.texte {
+  flex: 1;
+}
+
+.texte h1 {
+  font-size: 30px; /* Définir la taille de la police */
+  font-weight: normal; /* Définir le poids de la police à normal */
+}
+
+.texte h3 {
+  font-size: 20px; /* Définir la taille de la police */
+  font-weight: normal; /* Définir le poids de la police à normal */
+}
+
+
+.image-droite {
+  flex: 1;
+  text-align: right;
+}
+
+.image-droite img {
+  max-width: 85%;
+  height: auto;
+}
+
+.horizontal-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.horizontal-list li {
+  margin: 0;
+}
+
+.horizontal-list a {
+  text-decoration: underline;
+  color: black;
+  font-style: italic; /* Enlever le gras */
+}
+
+
+.horizontal-list a:hover {
+  text-decoration: underline;
+}
+
+.skills {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrer horizontalement */
+}
+
+.subject {
+  width: calc(100% - 40px); /* Ajustement de la largeur pour utiliser toute la largeur disponible */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  align-items: center; /* Centrer horizontalement */
+  justify-content: center; /* Centrer verticalement */
+}
+
+
+.subject h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.competence {
+  margin-bottom: 15px; /* Ajout d'un espace entre chaque compétence */
+  display: block; /* Afficher chaque compétence comme un bloc (une en dessous de l'autre) */
+}
+
+.competence-name {
+  text-align: center;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.progress {
+  height: 100%;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  background-color: #4caf50;
+  width: 100%;
+}
+
+.propos-moi {
+  display: flex;
+  flex-direction: column; /* Afficher les éléments en colonne */
+  align-items: center; /* Centrer horizontalement */
+  justify-content: center; /* Centrer verticalement */
+  margin-top: 100px; /* Ajouter une marge en haut pour décaler la section */
+}
+
+
+
+

@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between; /*Aligner les elements dans l'axe du conteneur  */
+        align-items: center;
+        position: fixed; /* Ajout de la propriété pour fixer le header en haut */
+        width: 100%; /* Utilisation de la largeur complète de la fenêtre */
+        top: 0; /* Alignement en haut de la fenêtre */
+      
+  }
+  
+  nav ul {
+    list-style-type: none; /* on enleve les points de la liste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img.rounded-image {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    display: flex;
+    flex-direction: column; /* mettre le logo en colonne*/
+  }
+  
+  .logo-text .name {
+    font-weight: bold; /*texte en gras*/
+    font-size: 18px;
+  }
+  
+  
+  section {
+    padding: 50px;
+  }
+  
+  .propos-moi {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap; /* Pour garantir que le contenu s'ajuste correctement sur les écrans plus petits */
+    
+}
+  
+.propos-moi .texte {
+  flex: 1;
+  font-size: 25px;
+  max-width: 55%; /* Réduire un peu la largeur du texte pour laisser plus d'espace à l'image */
+}
+  
+.image-droite {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* Aligne l'image à gauche dans son conteneur */
+  margin-left: 100px; /* Ajoute de l'espace entre le texte et l'image */
+  margin-top: 175px;
+}
+
+.image-droite img {
+  max-width: 70%; /* Réduit la taille maximale de l'image pour qu'elle soit moins collée au bord droit */
+  height: auto;
+  border-radius: 8px;
+
+}
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+ 
+
+
+.formations {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap; /* Permet le passage à la ligne si l'espace est insuffisant */
+    justify-content: space-between; /* Aligne les colonnes à l'horizontale */
+  }
+  
+  .formation {
+    width: calc(50% - 20px); /* Calcule la largeur pour que deux colonnes s'ajustent à la largeur de la section avec une marge de 20px entre elles */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ombre deriere*/
+    margin-bottom: 20px; /* Ajout de marge en bas pour l'espace entre les lignes */
+    box-sizing: border-box; /* Pour inclure le padding et la bordure dans la largeur de la colonne */
+    display: flex; /* Pour utiliser la flexbox pour aligner le contenu verticalement */
+    flex-direction: column; /* Pour empiler le contenu verticalement dans chaque colonne */
+    justify-content: space-between; /* Pour aligner le contenu de la colonne verticalement */
+  }
+  
+  .formation h3 {
+    margin-bottom: 10px;
+    text-align: center; /* Pour centrer le texte horizontalement */
+    text-transform: uppercase;
+  }
+  
+  .formation p {
+    text-align: center; /* Pour centrer le paragraphe horizontalement */
+    font-size: 20px;
+  }
+  
+  .formation-image {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    margin-top: 10px; /* Ajout de marge au-dessus de l'image */
+  }
+  
+  .formation-image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .section-image {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .section-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .experience {
+    width: 100%; /* Prend toute la largeur de la section */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap; /* Permet le passage à la ligne si l'espace est insuffisant */
+  }
+  
+  .experience-content {
+    flex: 1;
+    margin-right: 20px; /* Ajout de marge à droite pour séparer la description du bord */
+  }
+  
+
+  .experience h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25PX;
+  }
+  
+  .experience p {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .experience-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex: 1; /* Ajustement pour occuper tout l'espace disponible (prend autant d'espace que possible)*/
+  }
+  
+  .experience-image img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+    /* Centrer l'image horizontalement dans le conteneur */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  
+  .section-image {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .section-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .skills {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .subject {
+    width: calc(33.3333% - 20px);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    flex-direction: row; /* Modifier la direction du flex container en ligne */
+    align-items: center; /* Aligner les éléments sur la ligne */
+    
+    
+  
+  }
+  
+  .subject h3 {
+    margin-right: 10px;
+    text-align: center;
+  }
+
+
+
+  
+  .competence {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .competence-name {
+    text-align: center;
+
+  }
+
+  .small-text {
+    font-size: 15px;
+    font-weight: normal; /* Désactive le style en gras */
+    text-decoration: underline; /* Souligne le texte */
+}
+
+
+
+  
+  .icon {
+    margin-bottom: 10px;
+  }
+  
+  .icon img {
+    max-width: 30px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .progress-bar {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .progress {
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    background-color: #4caf50;
+    width: 100%; 
+  }
+
+
+  
+  .section-image {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .section-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+
+
+
+  .qualities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Espace entre les boîtes */
+    padding: 20px; /* Espace intérieur autour de la grille */
+  }
+  
+  .quality {
+    background-color: #f9f9f9; /* Couleur de fond des boîtes */
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+    overflow: hidden; /* Masquer le débordement */
+    padding: 20px; /* Espace intérieur des boîtes */
+    text-align: center; /* Centrer le texte */
+  }
+  
+  .quality img {
+    max-width: 100%; /* Assurer que l'image ne dépasse pas la largeur de la boîte */
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Arrondir le haut de l'image */
+  }
+  
+  .quality h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+  
+  .quality p {
+    font-size: 1em;
+    color: black; /* Couleur du texte des paragraphes */
+  }
+  
+  
+
+
+  .languages {
+    padding: 50px;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .language {
+    flex: 1;
+    margin: 0 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout de l'ombre */
+  }
+  
+  .language img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .language h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .video-container p {
+    margin-left: 50px;
+  }
+
+  
+  
+  
+  
+  .progress-bar {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    background-color: #4caf50;
+    width: 100%;
+  }
+
+
+  .projects {
+    padding: 50px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .text {
+    flex: 1;
+    text-align: left;
+    margin: 0 10px;
+    box-sizing: border-box;
+    color: black;
+    align-self: flex-start; /* Ajustement pour aligner le contenu en haut */
+  }
+  
+  .text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    
+  }
+  
+  .project {
+    flex: 1;
+    margin: 0 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 20px;
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .project h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    font-size: 25px;
+  }
+
+  .divers {
+    padding: 50px;
+    text-align: center;
+    color: black; /* Changer la couleur du texte pour le rendre visible */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .item {
+    flex-basis: calc(33.33% - 20px);
+    margin: 0 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .item h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .contact-info strong {
+    font-weight: bold;
+    color: #ff8c00; /* Couleur pour mettre en évidence */
+  }
+
+
+  
+  .no-blue-link {
+    color: inherit; /* Utilise la couleur du texte parent */
+    text-decoration: none; /* Retire la ligne de soulignement si nécessaire */
+  }
+  
+  /* Optionnel : ajouter un effet au survol */
+  .no-blue-link:hover {
+    color: inherit; /* Maintient la couleur au survol */
+    text-decoration: underline; /* Ajoute un soulignement au survol si désiré */
+  }
+  
